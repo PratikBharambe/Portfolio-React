@@ -4,31 +4,44 @@ import SectionTitle from "../../components/SectionTitle";
 import me from "./assets/images/me.jpg"
  
 function AboutMe() {
+
+  const left = [
+    { property : "Name : ", value : "Pratik Bharambe" },
+    { property : "Phone : ", value : "8767121795" },
+    { property : "City : ", value : "Pune, India" }
+  ]
+
+  const right = [
+    { property : "Age : ", value : "22" },
+    { property : "Degree : ", value : "PG-DAC (Pursing)" },
+    { property : "Email : ", value : "pratikbharambe.kp@gmail.com" }
+  ]
+
   return (
     <>
       <div>
         <SectionTitle title="About Me" desc="Basic information about myself" />
       </div>
       <div className="flex justify-between m-7 p-3">
-        <div><img className="w-[450px] h-[600px] rounded-2xl" src={me} alt="me.jpg"/></div>
+        <div className="w-[900px] mr-5"><img className="w-[450px] h-[600px] rounded-2xl" src={me} alt="me.jpg"/></div>
         <div>
-          <div className="flex justify-between">
+          <div className="flex justify-between text-[1.15rem]">
             <div>
-              <ul>
-                <li>Name : Pratik Bharambe</li>
-                <li>Phone : 8767121795</li>
-                <li>City : Pune, INDIA</li>
+              <ul className="list-disc m-3 p-4">
+                {left.map((item) => (
+                  <li className="m-3 p-2"><b>{item.property}&nbsp;</b>{item.value}</li>
+                ))}
               </ul>
             </div>
             <div>
-              <ul>
-                <li>Age : 22</li>
-                <li>Degree : Pg-DAC (pursing)</li>
-                <li>Email : pratikbharambe.kp@gmail.com</li>
+             <ul className="list-disc m-3 p-4">
+                {right.map((item) => (
+                  <li className="m-3 p-2"><b>{item.property}&nbsp;</b>{item.value}</li>
+                ))}
               </ul>
             </div>
           </div>
-          <div className="font-ntHand">
+          <div className="font-ntHand m-3 p-4 text-[2rem]">
               Driven and self motivated, and therefore effective at completing
               tasks with minimal supervision. Confident leader and enthusiastic
               communicator.
