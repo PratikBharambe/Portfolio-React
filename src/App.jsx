@@ -3,6 +3,7 @@ import './App.css'
 
 import Home from './pages/home/Home'
 import AboutMe from './pages/aboutMe/AboutMe'
+import Skills from './pages/skills/Skills'
 
 function App() {
 
@@ -10,6 +11,7 @@ function App() {
     <>
       <div><Home/></div>
       <div><AboutMe/></div>
+      <div><Skills/></div>
     </>
   )
 }
