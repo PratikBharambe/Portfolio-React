@@ -58,13 +58,13 @@ function Skills() {
         </div>
         <div>
             <div>
-                <div>Programming Languages</div>
-                <div>
+                <div className='text-4xl m-3 p-2'>Programming Languages</div>
+                <div className='flex m-4'>
                     {programmingLanguage.map((item) => (
-                        <div>
-                            <div>{item.logo}</div>
-                            <div>{item.skillName}</div>
-                        </div>
+                        <div className='flex items-center justify-center w-auto bg-[#343434] rounded-md m-3 p-3'>
+                        <div className='text-6xl mr-1 pr-2'>{item.logo}</div>
+                        <div className='text-2xl mr-1 pr-2'>{item.skillName}</div>
+                    </div>                    
                     ))}
                 </div>
             </div>
