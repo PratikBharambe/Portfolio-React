@@ -1,6 +1,5 @@
-import React from "react";
+import React, { useState } from "react";
 import SectionTitle from "../../components/SectionTitle";
-
 import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
@@ -20,8 +19,9 @@ import { SiVite } from "react-icons/si";
 
 import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
-
 function Skills() {
+  const [selectedSkill, setSelectedSkill] = useState(null);
+
   const skillSet = [
     {
       name: "Programming Languages",
@@ -35,7 +35,7 @@ function Skills() {
       ],
     },
     {
-      name: "Framwwork & Libraries",
+      name: "Framework & Libraries",
       skills: [
         { logo: <FaReact />, skillName: "React" },
         { logo: <SiSpring />, skillName: "Spring" },
@@ -67,23 +67,34 @@ function Skills() {
       <div>
         <SectionTitle title="Skills" desc="My technology skill set" />
       </div>
-      <div>
-        <div className="flex">
-          {skillSet.map((data) => (
-            <div>
-              <div className="text-4xl m-3 p-2">{data.name}</div>
-              <div className="w-auto inline-block m-4">
-                {data.skills.map((item) => (
-                  <div className="flex items-center justify-center w-auto bg-[#343434] rounded-md m-3 p-3 hover:bg-[#1d1d1d] hover:border-double hover:border-2 hover:border-[#28be2d]">
-                    <div className="text-6xl mr-2 pr-2 text-[#28be2d]">
-                      {item.logo}
-                    </div>
-                    <div className="text-2xl mr-1 pr-2">{item.skillName}</div>
-                  </div>
-                ))}
-              </div>
+      <div className="grid grid-cols-3 gap-4">
+        <div className="flex flex-col">
+          {skillSet.map((item) => (
+            <div
+              key={item.name}
+              className={`bg-neutral-700 rounded-xl m-3 p-3 flex items-center gap-3 justify-center cursor-pointer border ${
+                selectedSkill === item.name ? 'border-[#30fb37]' : 'border-transparent'
+              } hover:border-[#30fb37] hover:bg-black`}
+              onClick={() => setSelectedSkill(item.name === selectedSkill ? null : item.name)}
+            >
+              <div>{item.skills[0].logo}</div>
+              <div>{item.name}</div>
             </div>
           ))}
+        </div>
+        <div className="col-span-2 justify-center">
+          {selectedSkill && (
+            <div>
+              {skillSet
+                .find((item) => item.name === selectedSkill)
+                ?.skills.map((skill) => (
+                  <div key={skill.skillName} className="bg-neutral-700 m-3 p-3 flex items-center gap-3 justify-center">
+                    <div>{skill.logo}</div>
+                    <div>{skill.skillName}</div>
+                  </div>
+                ))}
+            </div>
+          )}
         </div>
       </div>
     </>
