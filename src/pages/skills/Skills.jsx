@@ -20,7 +20,6 @@ import { SiVite } from "react-icons/si";
 
 import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
-import { data } from "autoprefixer";
 
 function Skills() {
   const skillSet = [
@@ -29,8 +28,8 @@ function Skills() {
       skills: [
         { logo: <FaHtml5 />, skillName: "HTML" },
         { logo: <FaCss3Alt />, skillName: "CSS" },
-        { logo: <TbBrandCpp />, skillName: "C/C++" },
         { logo: <DiJavascript />, skillName: "Javascript" },
+        { logo: <TbBrandCpp />, skillName: "C/C++" },
         { logo: <FaJava />, skillName: "J2SE & J2EE" },
         { logo: <FaDatabase />, skillName: "PlSql" },
       ],
