@@ -7,14 +7,14 @@ function AboutMe() {
 
   const left = [
     { property : "Name : ", value : "Pratik Bharambe" },
-    { property : "Phone : ", value : "8767121795" },
+    { property : "Phone : ", value : <a href="tel:+918767121795" className="hover:text-[#2a8f26]">8767121795</a> },
     { property : "City : ", value : "Pune, India" }
   ]
 
   const right = [
     { property : "Age : ", value : "22" },
     { property : "Degree : ", value : "PG-DAC (Pursing)" },
-    { property : "Email : ", value : "pratikbharambe.kp@gmail.com" }
+    { property : "Email : ", value : <a href="mailto:pratikbharambe.kp@gmail.com" className="hover:text-[#2a8f26]">pratikbharambe.kp@gmail.com</a> }
   ]
 
   return (
