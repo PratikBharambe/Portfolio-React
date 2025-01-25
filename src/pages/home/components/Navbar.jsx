@@ -9,10 +9,10 @@ import { MdConnectWithoutContact } from "react-icons/md";
 
 function Navbar() {
   const navbarData = [
-    { icon: <FaHome />, title: "Home", link: "#" },
-    { icon: <GoPerson />, title: "About Me", link: "#" },
-    { icon: <GiSkills />, title: "Skills", link: "#" },
-    { icon: <MdOutlineDocumentScanner />, title: "Resume", link: "#" },
+    { icon: <FaHome />, title: "Home", link: "#home" },
+    { icon: <GoPerson />, title: "About Me", link: "#aboutme" },
+    { icon: <GiSkills />, title: "Skills", link: "#skills" },
+    { icon: <MdOutlineDocumentScanner />, title: "Resume", link: "#resume" },
     { icon: <GrProjects />, title: "Projects", link: "#" },
     { icon: <MdConnectWithoutContact />, title: "Contact Me", link: "#" },
   ];
