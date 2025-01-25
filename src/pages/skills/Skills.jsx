@@ -4,21 +4,19 @@ import { FaHtml5 } from "react-icons/fa";
 import { FaCss3Alt } from "react-icons/fa";
 import { DiJavascript } from "react-icons/di";
 import { TbBrandCpp } from "react-icons/tb";
-import { FaJava } from "react-icons/fa6";
+import { FaJava } from "react-icons/fa";
 import { FaDatabase } from "react-icons/fa";
-
 import { FaReact } from "react-icons/fa";
 import { SiSpring } from "react-icons/si";
 import { SiSpringboot } from "react-icons/si";
 import { SiHibernate } from "react-icons/si";
-
-import { FaGitAlt } from "react-icons/fa6";
+import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
 import { SiVite } from "react-icons/si";
-
 import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+
 function Skills() {
   const [selectedSkill, setSelectedSkill] = useState(null);
 
@@ -63,41 +61,52 @@ function Skills() {
   ];
 
   return (
-    <>
-      <div>
-        <SectionTitle title="Skills" desc="My technology skill set" />
-      </div>
-      <div className="grid grid-cols-3 gap-4">
-        <div className="flex flex-col">
+    <div className="py-10 px-5">
+      <SectionTitle title="Skills" desc="My technology skill set" />
+      <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6 mt-8">
+        <div className="flex flex-col space-y-4">
           {skillSet.map((item) => (
             <div
               key={item.name}
-              className={`bg-neutral-700 rounded-xl m-3 p-3 flex items-center gap-3 justify-center cursor-pointer border ${
-                selectedSkill === item.name ? 'border-[#30fb37]' : 'border-transparent'
+              className={`bg-neutral-700 rounded-xl p-5 flex items-center gap-4 justify-between cursor-pointer border-2 transition-all duration-300 ease-in-out transform hover:scale-105 ${
+                selectedSkill === item.name
+                  ? "border-[#30fb37]"
+                  : "border-transparent"
               } hover:border-[#30fb37] hover:bg-black`}
-              onClick={() => setSelectedSkill(item.name === selectedSkill ? null : item.name)}
+              onClick={() =>
+                setSelectedSkill(item.name === selectedSkill ? null : item.name)
+              }
             >
-              <div>{item.skills[0].logo}</div>
-              <div>{item.name}</div>
+              <div className="flex items-center gap-3">
+                <div className="text-3xl">{item.skills[0].logo}</div>
+                <div className="font-semibold text-lg">{item.name}</div>
+              </div>
+              <div className="text-xl text-[#30fb37]">+</div>
             </div>
           ))}
         </div>
+
         <div className="col-span-2 justify-center">
           {selectedSkill && (
-            <div>
+            <div className="grid grid-cols-1 sm:grid-cols-2 lg:grid-cols-3 gap-6">
               {skillSet
                 .find((item) => item.name === selectedSkill)
                 ?.skills.map((skill) => (
-                  <div key={skill.skillName} className="bg-neutral-700 m-3 p-3 flex items-center gap-3 justify-center">
-                    <div>{skill.logo}</div>
-                    <div>{skill.skillName}</div>
+                  <div
+                    key={skill.skillName}
+                    className="bg-neutral-700 rounded-xl p-5 flex items-center gap-4 justify-center border-2 hover:border-[#30fb37] transition-all duration-200 ease-in-out transform hover:scale-105"
+                  >
+                    <div className="text-2xl">{skill.logo}</div>
+                    <div className="font-semibold text-lg">
+                      {skill.skillName}
+                    </div>
                   </div>
                 ))}
             </div>
           )}
         </div>
       </div>
-    </>
+    </div>
   );
 }
 
