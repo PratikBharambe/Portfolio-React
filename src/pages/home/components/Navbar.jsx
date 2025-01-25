@@ -16,7 +16,7 @@ function Navbar() {
     { icon: <MdOutlineDocumentScanner />, title: "Resume", link: "#resume" },
     { icon: <BiCertification />, title: "Certifications", link: "#certifications" },
     { icon: <GrProjects />, title: "Projects", link: "#" },
-    { icon: <MdConnectWithoutContact />, title: "Contact Me", link: "#" },
+    { icon: <MdConnectWithoutContact />, title: "Contact Me", link: "#contactme" },
   ];
 
   return (
