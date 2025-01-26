@@ -16,6 +16,7 @@ import { RiTailwindCssFill } from "react-icons/ri";
 import { SiVite } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
+import { SiDotnet } from "react-icons/si";
 
 function Skills() {
   const [selectedSkill, setSelectedSkill] = useState(null);
@@ -30,6 +31,7 @@ function Skills() {
         { logo: <TbBrandCpp />, skillName: "C/C++" },
         { logo: <FaJava />, skillName: "J2SE & J2EE" },
         { logo: <FaDatabase />, skillName: "PlSql" },
+        { logo: "C#", skillName: "C Sharp" },
       ],
     },
     {
@@ -40,6 +42,7 @@ function Skills() {
         { logo: <SiSpring />, skillName: "Spring MVC" },
         { logo: <SiSpringboot />, skillName: "Spring Boot" },
         { logo: <SiHibernate />, skillName: "Hibernate" },
+        { logo: <SiDotnet />, skillName: "MS DOT NET" },
       ],
     },
     {
@@ -68,7 +71,7 @@ function Skills() {
           {skillSet.map((item) => (
             <div
               key={item.name}
-              className={`bg-neutral-700 rounded-xl p-5 flex items-center gap-4 justify-between cursor-pointer border-2 transition-all duration-300 ease-in-out transform hover:scale-105 ${
+              className={`bg-[#141414] bg-opacity-50 border border-white rounded-xl p-5 flex items-center gap-4 justify-between cursor-pointer ${
                 selectedSkill === item.name
                   ? "border-[#30fb37]"
                   : "border-transparent"
@@ -78,10 +81,9 @@ function Skills() {
               }
             >
               <div className="flex items-center gap-3">
-                <div className="text-2xl sm:text-3xl">{item.skills[0].logo}</div>
-                <div className="font-semibold text-lg sm:text-xl">{item.name}</div>
+                <div className="text-6xl text-[#30fb37] border border-dashed border-white p-4 rounded-full sm:text-3xl">{item.skills[0].logo}</div>
+                <div className="font-semibold ml-2 text-lg sm:text-xl">{item.name}</div>
               </div>
-              <div className="text-xl sm:text-2xl text-[#30fb37]">+</div>
             </div>
           ))}
         </div>
@@ -94,9 +96,9 @@ function Skills() {
                 ?.skills.map((skill) => (
                   <div
                     key={skill.skillName}
-                    className="bg-neutral-700 rounded-xl p-5 flex items-center gap-4 justify-center border-2 hover:border-[#30fb37] transition-all duration-200 ease-in-out transform hover:scale-105"
+                    className="bg-[#141414] bg-opacity-50 border border-white  rounded-xl p-5 flex items-center gap-4 justify-center hover:border-[#30fb37]"
                   >
-                    <div className="text-2xl sm:text-3xl">{skill.logo}</div>
+                    <div className="text-2xl text-[#30fb37] border border-dashed border-white p-4 rounded-full sm:text-3xl">{skill.logo}</div>
                     <div className="font-semibold text-lg sm:text-xl">
                       {skill.skillName}
                     </div>
