@@ -7,6 +7,9 @@ function Projects() {
         {
             title: "CV-Auction",
             githubLink: "https://github.com/PratikBharambe/CV-Auction",
+            desc: [
+                {dt : "Frontend : ReactJS"},
+            ]
         },
         {
             title: "Portfolio-React",
