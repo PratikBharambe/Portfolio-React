@@ -13,8 +13,8 @@ function Navbar() {
     { icon: <GoPerson />, title: "About Me", link: "#aboutme" },
     { icon: <GiSkills />, title: "Skills", link: "#skills" },
     { icon: <MdOutlineDocumentScanner />, title: "Resume", link: "#resume" },
+    { icon: <GrProjects />, title: "Projects", link: "#projects" },
     { icon: <BiCertification />, title: "Certifications", link: "#certifications" },
-    { icon: <GrProjects />, title: "Projects", link: "#" },
     { icon: <MdConnectWithoutContact />, title: "Contact Me", link: "#contactme" },
   ];
 

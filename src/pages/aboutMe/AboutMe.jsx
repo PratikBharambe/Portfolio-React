@@ -20,7 +20,7 @@ function AboutMe() {
       <div>
         <SectionTitle title="About Me" desc="Basic information about myself" />
       </div>
-      <div className="flex flex-col md:flex-row justify-between m-7 p-3">
+      <div className="flex flex-col md:flex-row justify-center gap-60 m-7 p-3">
         {/* Left Section (Image) */}
         <div className="w-full md:w-[450px] md:h-[600px] mb-5 md:mb-0 md:mr-5">
           <img className="w-full h-auto rounded-2xl" src={me} alt="me.jpg" />
