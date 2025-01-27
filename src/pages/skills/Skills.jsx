@@ -13,6 +13,7 @@ import { SiHibernate } from "react-icons/si";
 import { FaGitAlt } from "react-icons/fa";
 import { FaGithub } from "react-icons/fa";
 import { RiTailwindCssFill } from "react-icons/ri";
+import { FaBootstrap } from "react-icons/fa";
 import { SiVite } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
@@ -38,6 +39,7 @@ function Skills() {
       name: "Framework & Libraries",
       skills: [
         { logo: <FaReact />, skillName: "React" },
+        { logo: <FaBootstrap />, skillName: "Bootstrap" },
         { logo: <SiSpring />, skillName: "Spring" },
         { logo: <SiSpring />, skillName: "Spring MVC" },
         { logo: <SiSpringboot />, skillName: "Spring Boot" },
