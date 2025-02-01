@@ -11,11 +11,20 @@ import Contact from './pages/contactPage/Contact'
 import FooterPage from './pages/footerPage/FooterPage'
 import Projects from './pages/projects/Projects'
 
+import { BrowserRouter, Routes, Route } from 'react-router-dom'
+import Payment from './payments/Payment'
+
 function App() {
   return (
     <>
-      <div id='home'><Home /></div>
 
+      <BrowserRouter>
+        <Routes>
+          <Route path = "/payment" element={<Payment/>}/>
+        </Routes>
+      </BrowserRouter>
+
+      <div id='home'><Home /></div>
       <div className="bg-fixed" style={{ backgroundImage: `url(${bg})` }}>
         <div id='aboutme' className="p-4"><AboutMe /></div>
         <div id='skills' className="p-4"><Skills /></div>
