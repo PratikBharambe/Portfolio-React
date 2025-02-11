@@ -11,6 +11,7 @@ import python_basics from "./assets/images/python_basics.png";
 import soft_tcs from "./assets/images/soft_tcs.png";
 import sql_basics from "./assets/images/sql_basics.png";
 import gamaka_python from "./assets/images/gamaka_python.png";
+import rest_api_intermediate from "./assets/images/rest_api_intermediate.png";
 
 function Certifications() {
     const [selectedImage, setSelectedImage] = useState(null);
@@ -21,6 +22,7 @@ function Certifications() {
         {url : sql_basics, title : "SQL (Basic) Certificate"},
         {url : problem_solving_basics, title : "Problem Solving (Basic) Certificate"},
         {url : problem_solving_Intermediate, title : "Problem Solving (Intermediate) Certificate"},
+        {url : rest_api_intermediate, title : "REST APT (Intermediate) Certificate"},
         {url : python_basics, title : "Python (Basic) Certificate"},
         {url : gamaka_python, title : "Gamaka Ai - Python Certificate"},
         {url : core_java, title : "Internshala Core Java Certificate"},

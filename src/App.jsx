@@ -32,7 +32,7 @@ function App() {
         <div id='projects' className="p-4"><Projects /></div>
         <div id='certifications' className="p-4"><Certifications /></div>
         <div id='contactme' className="p-4"><Contact /></div>
-        <div id='contactme'><FooterPage /></div>
+        <div id='footer'><FooterPage /></div>
       </div>
     </>
   )
