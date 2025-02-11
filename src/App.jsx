@@ -12,7 +12,6 @@ import FooterPage from './pages/footerPage/FooterPage'
 import Projects from './pages/projects/Projects'
 
 import { BrowserRouter, Routes, Route } from 'react-router-dom'
-import Payment from './payments/Payment'
 
 function App() {
   return (
