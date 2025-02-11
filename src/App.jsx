@@ -16,13 +16,6 @@ import { BrowserRouter, Routes, Route } from 'react-router-dom'
 function App() {
   return (
     <>
-
-      <BrowserRouter>
-        <Routes>
-          <Route path = "/payment" element={<Payment/>}/>
-        </Routes>
-      </BrowserRouter>
-
       <div id='home'><Home /></div>
       <div className="bg-fixed" style={{ backgroundImage: `url(${bg})` }}>
         <div id='aboutme' className="p-4"><AboutMe /></div>
