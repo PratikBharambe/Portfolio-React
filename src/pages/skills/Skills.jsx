@@ -18,6 +18,8 @@ import { SiVite } from "react-icons/si";
 import { SiMysql } from "react-icons/si";
 import { SiMongodb } from "react-icons/si";
 import { SiDotnet } from "react-icons/si";
+import { DiVisualstudio } from "react-icons/di";
+import { VscVscode } from "react-icons/vsc";
 
 function Skills() {
   const [selectedSkill, setSelectedSkill] = useState(null);
@@ -40,6 +42,7 @@ function Skills() {
       skills: [
         { logo: <FaReact />, skillName: "React" },
         { logo: <FaBootstrap />, skillName: "Bootstrap" },
+        { logo: <RiTailwindCssFill />, skillName: "Tailwind CSS" },
         { logo: <SiSpring />, skillName: "Spring" },
         { logo: <SiSpring />, skillName: "Spring MVC" },
         { logo: <SiSpringboot />, skillName: "Spring Boot" },
@@ -52,8 +55,9 @@ function Skills() {
       skills: [
         { logo: <FaGitAlt />, skillName: "Git" },
         { logo: <FaGithub />, skillName: "Github" },
-        { logo: <RiTailwindCssFill />, skillName: "Tailwind CSS" },
         { logo: <SiVite />, skillName: "Vite" },
+        { logo: <VscVscode />, skillName: "VS Code" },
+        { logo: <DiVisualstudio />, skillName: "Visual Studio" },
       ],
     },
     {
