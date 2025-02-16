@@ -27,7 +27,7 @@ const MouseFollower = () => {
       style={{
         left: `${mousePosition.x - 8}px`, // 32px offset to center the circle
         top: `${mousePosition.y - 8}px`, // 32px offset to center the circle
-        transition: "left 0.1s ease, top 0.1s ease", // Smooth movement effect
+        transition: "left 0.3s ease, top 0.3s ease", // Smooth movement effect
         pointerEvents: "none", // Allow mouse events to pass through the circle
       }}
     ></div>
