@@ -29,7 +29,7 @@ function Projects() {
             ]
         },
         {
-            title: "Neflix-Clone (FrontEnd)",
+            title: "Netflix-Clone (FrontEnd)",
             logo : <TbBrandNetflix />,
             githubLink: "https://github.com/PratikBharambe/Netflix-clone",
             desc: [
