@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import SectionTitle from '../../components/SectionTitle';
 
 import { RiAuctionLine } from "react-icons/ri";

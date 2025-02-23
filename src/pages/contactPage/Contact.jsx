@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import SectionTitle from "../../components/SectionTitle";
 import { MdConnectWithoutContact } from "react-icons/md";
 import { FaGithub, FaLinkedin } from "react-icons/fa";

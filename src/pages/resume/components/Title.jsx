@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+import PropTypes from "prop-types";
 
 function Title(props) {
   return (
@@ -12,5 +13,9 @@ function Title(props) {
     </>
   );
 }
+
+Title.propTypes = {
+  value: PropTypes.string.isRequired,  // 'value' should be a required string
+};
 
 export default Title;

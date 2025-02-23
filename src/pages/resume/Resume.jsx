@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import SectionTitle from "../../components/SectionTitle";
 import Title from "./components/Title";
 import resume from "./assets/pratik_bharambe_resume.pdf";

@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import bg from "./assets/images/bg.jpg";
 import Navbar from "./components/Navbar";
 import Intro from "./components/Intro";

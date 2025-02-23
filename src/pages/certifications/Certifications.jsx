@@ -1,4 +1,4 @@
-import React, { useState } from 'react';
+import { useState } from 'react';
 import SectionTitle from '../../components/SectionTitle';
 
 import core_java from "./assets/images/core_java.png";

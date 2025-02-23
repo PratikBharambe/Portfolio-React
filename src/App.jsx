@@ -11,7 +11,6 @@ import Contact from './pages/contactPage/Contact'
 import FooterPage from './pages/footerPage/FooterPage'
 import Projects from './pages/projects/Projects'
 
-import { BrowserRouter, Routes, Route } from 'react-router-dom'
 import MouseFollower from './components/MouseFollower'
 
 function App() {

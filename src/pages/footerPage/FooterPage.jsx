@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 import bg from './assets/bg.jpg';
 import { FaGithub } from "react-icons/fa";
 import { FaLinkedin } from "react-icons/fa6";

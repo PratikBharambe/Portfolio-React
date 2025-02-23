@@ -1,4 +1,4 @@
-import React from 'react';
+// import React from 'react';
 
 function Intro() {
   return (
@@ -8,7 +8,7 @@ function Intro() {
         <div className="font-tangerine text-6xl sm:text-8xl pt-4 pb-4 text-center sm:text-left">
           Pratik <span className="text-[#30fb37]">Bharambe</span>
         </div>
-        <div className="m-2 text-center sm:text-left">I'm a Full Stack Developer</div>
+        <div className="m-2 text-center sm:text-left">I&#39;m a Full Stack Developer</div>
       </div>
     </div>
   );

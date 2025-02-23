@@ -1,4 +1,5 @@
-import React from "react";
+// import React from "react";
+import PropTypes from "prop-types"; 
 
 function SectionTitle(props) {
   return (
@@ -18,5 +19,11 @@ function SectionTitle(props) {
     </div>
   );
 }
+
+// Prop validation
+SectionTitle.propTypes = {
+  title: PropTypes.string.isRequired,  // 'title' should be a required string
+  desc: PropTypes.string.isRequired,   // 'desc' should be a required string
+};
 
 export default SectionTitle;

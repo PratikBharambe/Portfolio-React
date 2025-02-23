@@ -1,4 +1,4 @@
-import React from "react";
+// import React from "react";
 import { FaHome } from "react-icons/fa";
 import { GoPerson } from "react-icons/go";
 import { GiSkills } from "react-icons/gi";
