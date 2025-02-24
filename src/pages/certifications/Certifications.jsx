@@ -12,7 +12,7 @@ import soft_tcs from "./assets/images/soft_tcs.png";
 import sql_basics from "./assets/images/sql_basics.png";
 import gamaka_python from "./assets/images/gamaka_python.png";
 import rest_api_intermediate from "./assets/images/rest_api_intermediate.png";
-import Introduction_to_Prompt_Engineering_for_Generative_AI_2023 from "./assets/images/Introduction_to_Prompt_Engineering_for_Generative_AI_2023.png";
+import Introduction_to_Prompt_Engineering_for_Generative_AI_2023 from "./assets/images/Introduction_to_Prompt_Engineering_for_Generative_AI_2023.jpg";
 
 function Certifications() {
     const [selectedImage, setSelectedImage] = useState(null);
