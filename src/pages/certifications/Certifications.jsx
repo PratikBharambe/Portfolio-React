@@ -12,11 +12,13 @@ import soft_tcs from "./assets/images/soft_tcs.png";
 import sql_basics from "./assets/images/sql_basics.png";
 import gamaka_python from "./assets/images/gamaka_python.png";
 import rest_api_intermediate from "./assets/images/rest_api_intermediate.png";
+import Introduction_to_Prompt_Engineering_for_Generative_AI_2023 from "./assets/images/Introduction_to_Prompt_Engineering_for_Generative_AI_2023.png";
 
 function Certifications() {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const certifications = [
+        {url : Introduction_to_Prompt_Engineering_for_Generative_AI_2023, title : "Introduction to Prompt Engineering for Generative AI 2023"},
         {url : java_basics, title : "Java (Basic) Certificate"},
         {url : js_basics, title : "JavaScript (Basic) Certificate"},
         {url : sql_basics, title : "SQL (Basic) Certificate"},
