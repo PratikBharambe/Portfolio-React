@@ -13,11 +13,13 @@ import sql_basics from "./assets/images/sql_basics.png";
 import gamaka_python from "./assets/images/gamaka_python.png";
 import rest_api_intermediate from "./assets/images/rest_api_intermediate.png";
 import Introduction_to_Prompt_Engineering_for_Generative_AI_2023 from "./assets/images/Introduction_to_Prompt_Engineering_for_Generative_AI_2023.jpg";
+import Career_Essentials_in_GitHub_Professional_Certificate from "./assets/images/Career_Essentials_in_GitHub_Professional_Certificate.jpg";
 
 function Certifications() {
     const [selectedImage, setSelectedImage] = useState(null);
 
     const certifications = [
+        {url : Career_Essentials_in_GitHub_Professional_Certificate, title : "Career Essentials in GitHub Professional Certificate"},
         {url : Introduction_to_Prompt_Engineering_for_Generative_AI_2023, title : "Introduction to Prompt Engineering for Generative AI 2023"},
         {url : java_basics, title : "Java (Basic) Certificate"},
         {url : js_basics, title : "JavaScript (Basic) Certificate"},
