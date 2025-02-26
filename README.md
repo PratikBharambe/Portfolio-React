@@ -1,11 +1,26 @@
 # Pratik's Portfolio
 
-This is a personal portfolio project built using React and Vite. The project showcases various sections including Home, About Me, Skills, Resume, Projects, Certifications, and Contact.
+This project is a personal portfolio website built using the **React** framework and **Vite** build tool. It is designed to showcase various aspects of an individual's professional and personal profile. The portfolio is fast, responsive, and interactive, providing an excellent user experience.
 
-Currently, two official plugins are available:
+## Features
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+The portfolio includes the following key sections:
+
+- **Home**: The landing page of the portfolio, providing an overview and introduction.
+- **About Me**: A section detailing the individual's background, interests, and personal story.
+- **Skills**: A showcase of both technical and soft skills, presented in a visually appealing manner.
+- **Resume**: A detailed resume or CV, outlining the individual's professional experience, education, and achievements.
+- **Projects**: A portfolio of projects that the individual has worked on, with descriptions, technologies used, and links to live demos or repositories.
+- **Certifications**: A list of certifications and courses completed by the individual, demonstrating expertise and a commitment to continuous learning.
+- **Contact**: A section with contact information and a form for visitors to get in touch.
+
+## Technologies Used
+
+- **React**: JavaScript library for building the user interface.
+- **Vite**: Build tool and development server for fast and efficient builds.
+- **HTML5**: For structuring the web content.
+- **CSS3**: For styling the website, ensuring responsiveness and modern aesthetics.
+- **JavaScript**: For dynamic content and interactivity.
 
 ## Table of Contents
 
